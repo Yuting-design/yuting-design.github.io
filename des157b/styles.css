@@ -3,14 +3,22 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #311578;
     color: rgb(235, 235, 235);
     transition: all 2s;
+    background-image: url('images/background_dark.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Dosis', sans-serif;
 }
 
 body.switch {
     background-color: rgb(235, 235, 235);
     color: #333;
+    background-image: url('images/background_light.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* font-family: 'Chilanka', cursive; */
 }
 
 #container {
@@ -27,37 +35,128 @@ header {
     margin: 0 auto 2em auto;
 }
 
+#title{
+    position: absolute;
+    top: -1%;
+    left: 5%;
+    transform: rotate(-15deg);
+}
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 48pt;
+    line-height: 48px;
+    margin: 40px 0;
+}
+h1.switch{
+    font-family: 'Nerko One', cursive;
+    font-size: 58pt;
+}
 #banner {
     position: relative;
-    display: flex;
+    top: 20px;
     width: 1100px;
     height: 250px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
+    background-color: none;
     overflow: hidden;
+    background-image: url('images/banner_dark.png');
+    background-size: cover;
+    z-index: -1;
 }
 
 #banner.switch {
     background-color: #333;
     color: rgb(235, 235, 235);
     transition: all 2s;
+    background-image: url('images/banner_light.jpg');
+    background-size: cover;
+    border: solid #34c3c8;
 }
-
+#ring{
+    background-image: none;
+    position: absolute;
+    width: 85px;
+    height: 158px;
+    left: 85.3%;
+    top: 35px;
+}
+#ring.switch{
+    background-image: url('images/ring.png');
+    background-size: cover;
+}
+#bunny{
+    background-image: none;
+    width: 237px;
+    height: 277px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+#bunny.switch{
+    background-image: url('images/bunny.png');
+    background-size: cover;
+}
 main {
     display: flex;
-    justify-content: space-evenly;
-    margin: 1em auto;
+    justify-content: center;
+    margin: 2em auto;
 }
 
 main section {
-    width: 25%;
-    border: 1px rgb(235, 235, 235) dashed;
-    margin: 0 .25em;
+    
+    margin: 20px;
     padding: 1em;
+    width: 245px;
+}
+
+#projects{
+    border-left: 8px #210860 solid;
+    background-color: rgb(58, 30, 121,0.5);
+}
+#projects.switch{
+    border:none;
+    background: none;
+}
+#research{
+    border-left: 8px #662D91 solid;
+    background-color: rgb(87, 44, 137,0.5);
+}
+#research.switch{
+    border:none;
+    background: none;
+}
+#development{
+    border-left: 8px #93278F solid;
+    background-color: rgb(147, 39, 143,0.5);
+}
+#development.switch{
+    border:none;
+    background: none;
+}
+#final{
+    border-left: 8px #9E005D solid;
+    background-color: rgb(158, 0, 93,0.5);
+}
+#final.switch{
+    border:none;
+    background: none;
+}
+
+
+
+h3{
+    font-size: 20pt;
+    font-family: 'Berkshire Swash', cursive;
+}
+h3.switch{
+    padding-left: 15px;
+    font-family: 'Nerko One', cursive;
+    font-size: 24pt;
 }
 
 a {
     text-decoration: none;
+    width: 215px;
 }
 
 ol,
@@ -67,29 +166,32 @@ ul {
     padding-left: 0;
 }
 
-section li {
-    padding-left: 1.2em;
-}
 
 section a {
     line-height: 1.1em;
     display: inline-block;
-    padding: .5em;
-    color: orange;
+    padding: 7px 0;
+    color: rgba(235, 235, 235, 0.8);
+    font-size: 14pt;
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px white;
 }
 
 section.switch a {
+    padding-left: 15px;
     color: #333;
 }
 
 section.switch a:hover {
-    background-color: #333;
+    border: 3px #000000 solid;
+    background-color: rgb(75, 75, 75);
     color: rgb(235, 235, 235);
+    border-radius:20px;
+    padding:5px 15px;
+    text-shadow:none;
 }
 
 button {
@@ -97,22 +199,26 @@ button {
     top: 20px;
     right: 20px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
-    border: 1px solid transparent;
+    background-color: rgb(158, 0, 93,0.5);
+    color: rgba(235, 235, 235, 0.8);
+    border: none;
+    border-radius: 2px;
+
 }
 
 button:hover {
-    background-color: coral;
+    text-shadow: 0 0 2px white;
+    background-color: rgb(158, 0, 92);
     cursor: pointer;
 }
 
 button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    border-radius: 4px;
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    background-color: rgb(85, 225, 243);
+    color: rgb(0, 0, 0);
 }
