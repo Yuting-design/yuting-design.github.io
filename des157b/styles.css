@@ -7,16 +7,16 @@ body {
     color: rgb(235, 235, 235);
     transition: all 2s;
     background-image: url('images/background_dark.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     font-family: 'Dosis', sans-serif;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     color: #333;
     background-image: url('images/background_light.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     /* font-family: 'Chilanka', cursive; */
 }
