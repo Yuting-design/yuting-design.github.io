@@ -57,7 +57,7 @@ h1.switch{
     width: 1100px;
     height: 250px;
     margin: auto;
-    background-color: none;
+    background-color: transparent;
     overflow: hidden;
     background-image: url('images/banner_dark.png');
     background-size: cover;
