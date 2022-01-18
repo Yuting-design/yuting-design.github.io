@@ -1,0 +1,147 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.fa-expand,.fa-compress {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+.fa-volume-up,.fa-volume-mute{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+.fa-expand,.fa-compress,.fa-volume-up,.fa-volume-mute:hover {
+    cursor: pointer;
+}
+
+.fa-tree{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    color: antiquewhite;
+    transform: translate(-50%,50%);
+    animation: tree 2s infinite alternate ease-in-out;
+}
+
+#poem p {
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.444);
+    font-family: 'Courgette', cursive;
+    font-size: 20pt;
+    position: absolute; 
+    box-shadow: 0 0 4px rgb(0, 0, 0); 
+}
+#poem p:hover{
+    text-shadow: 0 0 6px rgb(255, 255, 255);
+}
+
+#line1 {
+    left: 10%;
+    top: 30%;
+}
+
+#line2 {
+    left: 60%;
+    top: 40%;
+}
+
+#line3 {
+    left: 35%;
+    top: 60%;
+    /* animation: zoomIn 5s; */
+}
+
+#line4 {
+    left: 10%;
+    top: 30%;
+}
+
+#line5 {
+    left: 50%;
+    top: 40%;
+}
+
+#line6 {
+    left: 30%;
+    top: 55%;
+}
+.prepare{
+    opacity: 0;
+    z-index: -1;
+}
+/* try to let text stay when mouse move in (unfinished) */
+/* .stay{
+    opacity: 1;
+    z-index: 2;
+} */
+.hidden {
+    opacity: 0;
+    z-index: 0;
+    animation: fadeOut 2s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 1;
+    animation: fadeIn 4s;
+}
+.lightsOff{
+    filter:brightness(0.5);
+}
+.lightsOn{
+    filter:brightness(1);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes fadeOut{
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(4);
+    }
+}
+
+@keyframes tree {
+    0%{
+        opacity: .5;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+        transform: scale(1.4);
+    }
+}
