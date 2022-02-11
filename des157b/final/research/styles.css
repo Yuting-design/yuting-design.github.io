@@ -1,50 +1,83 @@
-#container{
+#container {
     position: relative;
     margin: 0 20% 0 20%;
     background-color: aliceblue;
 }
-section{
+
+section {
     margin: 40px;
     padding-bottom: 20px;
 }
-p{
+
+p {
     color: dimgray;
 }
-.summary{
+
+.summary {
     margin-left: 40px;
 }
-a{
+
+a {
     text-decoration: none;
     color: rgb(106, 25, 186);
 }
-a:hover{
+
+a:hover {
     color: rgb(22, 226, 233);
 }
-#back{
+
+#back {
     line-height: 60px;
     position: absolute;
     left: 40px;
     text-decoration: none;
     color: rgb(180, 155, 193);
 }
-#back:hover{
+
+#back:hover {
     color: rgb(255, 255, 255);
 }
-header,footer{
+
+header,
+footer {
     width: 100%;
     height: 60px;
 }
-header{
+
+header {
     background-color: rgb(106, 25, 186);
 
 }
-h1{
+
+h1 {
     margin-top: 60px;
 }
-img{
+
+img {
     position: relative;
     left: 50%;
     margin: auto;
     transform: translate(-50%, 0);
     height: 400px;
+}
+
+.moodBoard {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+#images {
+    columns: 5 200px;
+    /* column-gap: 1.5rem; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+#images>img {
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
