@@ -25,7 +25,6 @@ header,footer{
     height: 60px;
 }
 p{
-    text-align: center;
     margin-bottom: 40px;
     color: dimgray;
 }
@@ -44,4 +43,16 @@ img{
 }
 #storyboard{
     height: 600px;
+}
+.projectBrief{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.projectBrief>h2{
+    font-size: medium;
+    text-align: right;
+    padding-right: 40px;
+}
+.projectBrief>p{
+    grid-column: 2 / 4;
 }
