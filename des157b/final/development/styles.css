@@ -56,3 +56,23 @@ img{
 .projectBrief>p{
     grid-column: 2 / 4;
 }
+.moodBoard {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+}
+
+#images {
+    columns: 5 200px;
+    /* column-gap: 1.5rem; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+#images>img {
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
