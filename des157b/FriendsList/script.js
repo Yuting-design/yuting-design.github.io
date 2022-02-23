@@ -33,7 +33,7 @@ async function addFriend() {
         let value = inputs[i].value;
         newFriend[key] = value
     }
-    // console.log(newFriend);
+    console.log(newFriend);
     const newFriendData = new Parse.Object('Friends');
     if (newFriend.fname != "" && newFriend.lname != "" && newFriend.email != "") {
         newFriendData.set('fname', newFriend.fname);
