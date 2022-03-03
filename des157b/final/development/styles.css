@@ -56,6 +56,10 @@ img{
 .projectBrief>p{
     grid-column: 2 / 4;
 }
+
+.projectBrief>.subtitle{
+    text-align: left;
+}
 .moodBoard {
     display: flex;
     /* justify-content: center; */
