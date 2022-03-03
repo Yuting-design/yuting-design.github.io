@@ -1,41 +1,52 @@
-.cube{
+.cube {
     height: 200px;
     width: 200px;
+    cursor: pointer;
     border: solid;
 }
-.add-form{
+
+.add-form {
     border: solid;
     padding: 2em;
     position: absolute;
     background-color: white;
 }
-.hide{
+
+.hide {
     visibility: hidden;
 }
-.show{
+
+.show {
     visibility: visible;
 }
-.name{
+
+.name {
     font-size: 16px;
 }
-.todayIs{
+
+.todayIs {
     font-size: 28px;
     font-weight: bold;
 }
-.theDetial,#dateDetialDisplayer{
+
+.theDetial,
+#dateDetialDisplayer {
     position: absolute;
     height: 400px;
     width: 650px;
     border: solid;
 }
-#dateDetialDisplayer{
+
+#dateDetialDisplayer {
     background-color: white;
 }
-#spdayDisplayer .cube div{
+
+#spdayDisplayer .cube div {
     color: white;
 }
-#popWindow{
-    position:fixed;
+
+#popWindow {
+    position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.312);

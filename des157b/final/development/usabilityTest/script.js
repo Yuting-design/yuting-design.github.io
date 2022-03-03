@@ -10,7 +10,7 @@
     document.querySelector('#dateDetialDisplayer').innerHTML = todayIs + `<button class="closeBtn" id = "dateCloseBtn" type='button'>Close</button>`;
     //get mood
     const mood = ['good', 'bad', 'dontKnow']
-    const color = ['230, 39, 147', '100, 61, 255', '144, 59, 255']
+    const color = ['230, 39, 147', '58, 58, 255', '144, 59, 255']
         //add new 
         //form pages
     const addbutton = document.querySelector('#add-button');
@@ -83,7 +83,7 @@
         }
         if (event.target.matches('.cube') || event.target.matches('.name') || event.target.matches('.todayIs')) {
             //show date detial
-            if (event.target.getAttribute('id') == 'date') {
+            if (event.target.getAttribute('id') == 'date' || event.target.parentNode.getAttribute('id') == 'date') {
                 document.getElementById('popWindow').className = 'show';
                 document.getElementById('dateDetialDisplayer').className = 'show';
             }
@@ -163,20 +163,6 @@
         }
     }
 
-
-
-    //test
-    // function removeDay(recordId) {
-    //     const youAreSure = confirm('Are you sure you want to delete this day?');
-    //     if (youAreSure) {
-    //         document.getElementById(`r-${recordId}`).className = 'remove';
-    //         setTimeout(function () {
-    //             const elem = document.getElementById(`r-${recordId}`);
-    //             elem.parentNode.removeChild(elem);
-    //         }, 1500);
-    //     }
-    // }
-
     //delete
     async function deleteDay(recordId) {
         const youAreSure = confirm('Are you sure you want to delete this day?');
@@ -216,12 +202,16 @@
             theDetial.setAttribute("class", "theDetial");
             theDetial.innerHTML =
                 `
-                <h2 class = 'side left'>${uname}</h2>
-                <section class = 'side rignt'>
-                    <div">${spday}</div>
+                <section class = 'side left'>
+                    <h2 class = 'side left'>${uname}</h2>
+                    <div>${spday}</div>
+                </section>
+                
+                <section class = 'side right'>
                     <div>${detials}</div>
-                </section>        
+                </section>       
                 <button class="closeBtn" type='button'>Close</button>`
+                //<button class="deleteBtn" type='button'>Delete</button> 
 
             ;
             popWindow.append(theDetial);
@@ -261,7 +251,7 @@
                 theListItem.innerHTML = `
                 <div class="name" id="n-${id}">${uname}</div>
                 <div class="todayIs" id="d-${id}">${spday}</div>
-                <button class="deleteBtn" type='button'>Delete</button>`;
+                `;
                 spdayDisplayer.append(theListItem);
                 //color set
                 for (let i = 0; i < mood.length; i++) {
@@ -276,5 +266,12 @@
     }
 
     displaySpDays();
+
+
+    // $('#spdayDisplayer').masonry({
+    //     itemSelector: '.grid-item',
+    //     columnWidth: 160
+    // });
+
 
 })();
