@@ -1,3 +1,40 @@
+#usertestPW {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.312);
+    height: 100%;
+    width: 100%;
+}
+
+#userTest {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    width: 650px;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: white;
+}
+
+#showUserTest {
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 200px;
+}
+
+#userTestBtnC {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* --------------------------- */
+
 .hide {
     visibility: hidden;
 }
@@ -5,20 +42,25 @@
 .show {
     visibility: visible;
 }
-body{
+
+body {
     background-color: rgb(238, 238, 238);
 }
-header>div{
+
+header>div {
     width: 80%;
     margin: auto;
 }
-h1{
+
+h1 {
     font-size: 80px;
 }
-main{
+
+main {
     width: 80%;
     margin: auto;
 }
+
 .cube {
     box-sizing: border-box;
     padding: 20px;
@@ -30,31 +72,38 @@ main{
     border-radius: 8px;
     cursor: pointer;
 }
-.cube:hover{
+
+.cube:hover {
     box-shadow: 2px 2px 2px rgb(185, 185, 185);
 }
-#date .todayIs{
+
+#date .todayIs {
     font-size: 80px;
     text-align: center;
 }
-#add-button{
+
+#add-button {
     padding: 34px;
 }
-#add-button h2:first-child{
+
+#add-button h2:first-child {
     font-size: 60px;
     line-height: 60px;
     margin: 0;
 }
-#add-button h2{
+
+#add-button h2 {
     font-size: 48px;
     line-height: 48px;
     margin: 0;
 }
-#add-button p{
+
+#add-button p {
     font-size: 28px;
     line-height: 30px;
     margin: 0;
 }
+
 .name {
     font-size: 16px;
 }
@@ -65,81 +114,99 @@ main{
 }
 
 /* form style */
-button{
+button {
     background-color: white;
     color: rgb(144, 59, 255);
-    border: 2px solid rgb(144, 59, 255); 
+    border: 2px solid rgb(144, 59, 255);
     border-radius: 20px;
     width: 80px;
     height: 40px;
 }
-button:hover{
+
+button:hover {
     background-color: rgb(144, 59, 255);
     color: white;
     cursor: pointer;
     box-shadow: 0 0 5px rgb(63, 16, 125);
 }
-.rightBtn,.leftBtn{
+
+.rightBtn,
+.leftBtn {
     position: absolute;
     bottom: 40px;
 }
-.rightBtn{
+
+.rightBtn {
     left: 60px;
 }
-.leftBtn{
+
+.leftBtn {
     right: 60px;
 }
-input[type=text]{
+
+input[type=text] {
     height: 40px;
     width: 280px;
     border: none;
     border-bottom: 2px solid rgb(144, 59, 255);
     /* border-radius: 4px; */
 }
-input[type=text]:focus{
+
+input[type=text]:focus {
     outline: none;
-    border-radius:5px ;
+    border-radius: 5px;
     background-color: rgb(237, 227, 250);
 }
-input[type=level]{
+
+input[type=level] {
     outline: none;
     color: rgb(144, 59, 255);
     background-color: rgb(237, 227, 250);
 }
-#page1,#page2,#page3{
+
+#page1,
+#page2,
+#page3 {
     color: rgb(58, 58, 58);
     padding: 20px 80px;
 }
-#page1 label{
+
+#page1 label {
     display: block;
     width: 280px;
     margin-bottom: 40px;
 }
-#page2>label{
+
+#page2>label {
     display: block;
     margin-top: 40px;
 }
-#page2>h2{
+
+#page2>h2 {
     display: block;
     margin-bottom: 40px;
-} 
+}
 
-#page3 label{
+#page3 label {
     display: grid;
     grid-gap: 10px;
 }
+
 /* detial showing */
-.theDetial .closeBtn{
+.theDetial .closeBtn {
     position: absolute;
     right: 60px;
     bottom: 40px;
 }
-.deleteBtn{
+
+.deleteBtn {
     position: absolute;
     right: 165px;
     bottom: 40px;
 }
-.left,.right{
+
+.left,
+.right {
     box-sizing: border-box;
     padding: 40px;
     position: absolute;
@@ -147,33 +214,40 @@ input[type=level]{
     width: 325px;
     bottom: 0;
 }
-.left{
+
+.left {
     left: 0;
 }
-.left div{
+
+.left div {
     position: relative;
     margin-top: 80px;
     font-size: 40px;
 }
-.right{
+
+.right {
     border-radius: 0 20px 20px 0;
-    right:0;
+    right: 0;
     background-color: rgba(255, 255, 255, 0.4);
 }
-.theDetial,.add-form,
+
+.theDetial,
+.add-form,
 #dateDetialDisplayer {
     box-sizing: border-box;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);;
+    transform: translate(-50%, -50%);
+    ;
     height: 400px;
     width: 650px;
     border-radius: 20px;
     padding: 40px;
 }
 
-#dateDetialDisplayer ,.add-form{
+#dateDetialDisplayer,
+.add-form {
     background-color: white;
 }
 
@@ -181,7 +255,7 @@ input[type=level]{
     color: white;
 }
 
-.theDetial{
+.theDetial {
     color: white;
 }
 

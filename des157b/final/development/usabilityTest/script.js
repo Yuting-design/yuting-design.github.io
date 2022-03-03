@@ -1,4 +1,17 @@
 (function() {
+    //user test
+    const showUserTest = document.querySelector('#showUserTest');
+    const usertestPW = document.querySelector('#usertestPW');
+    const userTest = document.querySelector('#userTest');
+    const userTestBtnC = document.querySelector('#userTestBtnC');
+    userTestBtnC.addEventListener('click', function() {
+        userTest.className = 'hide';
+        usertestPW.className = 'hide';
+    })
+    showUserTest.addEventListener('click', function() {
+        userTest.className = 'show';
+        usertestPW.className = 'show';
+    })
     //link to back4App
     Parse.initialize("wsRzOaXKQ0bnyMn22gA72ytEsQIhGkGbNPwtZE6K", "tTUipNNG8w1yA2APSZLbE1Volgn8Z27DZ2LA5egC"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
     Parse.serverURL = 'https://parseapi.back4app.com/';
