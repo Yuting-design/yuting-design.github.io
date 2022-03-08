@@ -255,7 +255,7 @@
                 `;
                 spdayDisplayer.append(theListItem);
                 //color set
-                document.getElementById(`b-${id}`).style.backgroundColor = `rgb(255,255,255,${1-level*0.1})`;
+                document.getElementById(`b-${id}`).style.backgroundColor = `rgb(255,255,255,${1-(level*0.07+0.3)})`;
                 for (let i = 0; i < mood.length; i++) {
                     if (mood[i] == feeling) {
                         document.getElementById(`r-${id}`).style.backgroundColor = `rgb(${color[i]})`;
