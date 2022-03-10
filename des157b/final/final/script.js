@@ -17,7 +17,11 @@
                 }
             }
             console.log(worldToday);
-            document.getElementById('worldToday').innerHTML = worldToday;    
+            if(worldToday == ''){
+                document.getElementById('worldToday').innerHTML = '<p>What is special about today for you? Please share it with us!</p>';
+            }else{
+                document.getElementById('worldToday').innerHTML = worldToday;
+            }    
         }
         checkWorld(d.getDate());
     
